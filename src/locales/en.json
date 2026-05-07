@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "viewProjects": "View Projects",
+    "downloadCV": "Download C.V",
+    "emailMe": "Email Me"
+  },
+  "sections": {
+    "about": {
+      "eyebrow": "About",
+      "title": "A software architect focused on practical engineering impact",
+      "subtitle": "My work combines enterprise software architecture, scalable backend systems, cloud platforms, data engineering, and AI-assisted application design."
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "title": "Technical toolbox",
+      "subtitle": "A balanced skill set across architecture, backend development, cloud engineering, data platforms, and modern AI experimentation."
+    },
+    "projects": {
+      "eyebrow": "Live GitHub Projects",
+      "title": "Selected repositories fetched dynamically",
+      "subtitle": "This section reads from the public GitHub API in the browser and uses fallback repositories if the API is unavailable."
+    },
+    "certifications": { "title": "Certifications" },
+    "education": { "title": "Education" }
+  },
+  "footer": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

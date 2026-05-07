@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Block random/suspicious subdomains.
+  # Only allow main domain and www domain.
+  RewriteCond %{HTTP_HOST} !^(www\.)?bimaltamang\.com\.np$ [NC]
+  RewriteRule ^ - [F,L]
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Force non-www to www
+  RewriteCond %{HTTP_HOST} ^bimaltamang\.com\.np$ [NC]
+  RewriteRule ^(.*)$ https://www.bimaltamang.com.np/$1 [L,R=301]
+
+  # Do not rewrite real files or folders
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # React/Vite route fallback
+  RewriteRule ^ index.html [L]
+</IfModule>

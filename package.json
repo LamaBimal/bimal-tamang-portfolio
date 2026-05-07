@@ -1,0 +1,21 @@
+{
+  "name": "bimal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "set \"PATH=C:\\Users\\BimalT\\node;%PATH%\" && vite",
+    "build": "set \"PATH=C:\\Users\\BimalT\\node;%PATH%\" && vite build",
+    "preview": "set \"PATH=C:\\Users\\BimalT\\node;%PATH%\" && vite preview",
+    "deploy:check": "set \"PATH=C:\\Users\\BimalT\\node;%PATH%\" && npm run build && npm run preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "@tailwindcss/vite": "latest"
+  },
+  "devDependencies": {}
+}
